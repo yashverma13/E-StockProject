@@ -1,0 +1,28 @@
+.label-style{
+    border: 1px solid black;
+    padding: 3px;
+    margin-right: 50px;
+    width: 170px;
+    background: #e9e9e9;
+}
+.input-style{
+    border: 1px solid black; 
+    padding: 3px; 
+    width: 300px; 
+    background-color: white;
+}
+.date-style{
+    border: 1px solid black;
+    padding: 1px;
+    margin-right: 10px;
+    width: 100px;
+    background: #d4c0c0;
+}
+.container-style{
+    background-color: #fbfbfb; 
+    padding:15px;
+}
+.header-div-style{
+    background-color: #e0e0e0; 
+    padding:3px
+}

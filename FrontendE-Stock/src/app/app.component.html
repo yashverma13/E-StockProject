@@ -1,0 +1,94 @@
+<div class="container mt-3 container-style">
+  <div class="row header-div-style">
+    <div class="col-md-1">
+      <img
+        class="img-resesponsive"
+        src="assets/images/StockMarketImage.jpg"
+        width="100"
+        height="100"
+      />
+    </div>
+    <div class="col-md-4 mt-3">
+      <h2>E-Stock Xchange</h2>
+    </div>
+    <div class="col-md-2 mt-3">
+      <div ngbDropdown class="dropdown">
+        <button
+          ngbDropdownToggle
+          class="btn btn-success dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false">
+            All Companies
+        </button>
+        <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li class="dropdown-item">ABC Company</li>
+          <li class="dropdown-item">PQR Company</li>
+          <li class="dropdown-item">XYZ Company</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 mt-3">
+      <input type="text" placeholder="Enter Company Code" />
+      <button class="btn btn-primary">Search</button>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div style="text-align: center">
+      <label class="label-style"><b>Company Code</b></label>
+      <label class="input-style">COMP 001</label>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div style="text-align: center">
+      <label class="label-style"><b>Company Name</b></label>
+      <label class="input-style">Company1</label>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <form>
+    <div style="text-align: center">
+      <label class="label-style"><b>Select Date</b></label>
+        <label class="date-style">From</label>
+        <input type="date" id="date1" name="date1" value="" style="margin-right: 20px;">
+        <label class="date-style">To</label>
+        <input type="date" id="date2" name="date2" value="" style="margin-right: 20px;">
+        <button type="submit" class="btn btn-info ml-2">Find</button>
+    </div>
+    </form>
+  </div>
+  <div class="row mt-3 ml-3">
+    <div style="text-align: center; margin-left: 180px;">
+      <ag-grid-angular
+        style="width: 70%; height: 300px"
+        class="ag-theme-balham"
+        [columnDefs]="columnDefs"
+        [defaultColDef]="defaultColDef"
+        [rowData]="rowData"
+        [rowHeight]="'50'"
+        [rowSelection]="'multiple'"
+        [animateRows]="true"
+      ></ag-grid-angular>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div style="text-align: center">
+      <label class="label-style"><b>Minimum Price</b></label>
+      <label class="input-style">Min</label>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div style="text-align: center">
+      <label class="label-style"><b>Maximum Price</b></label>
+      <label class="input-style">Max</label>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div style="text-align: center">
+      <label class="label-style"><b>Average Price</b></label>
+      <label class="input-style">Avg</label>
+    </div>
+  </div>
+</div>
